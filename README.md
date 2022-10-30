@@ -111,6 +111,10 @@ This gives us an IPython prompt and we can demonstrate that we have access to
 the scope within EASE:
 
 ```python
-from eclipse.system.resources import getWorkspace
-getWorkspace().getLocation().toString()
+In [1]: from eclipse.system.resources import getWorkspace
+
+In [2]: getWorkspace().getLocation().toString()
+Out[2]: '/tmp/workspace'
+
+In [3]:
 ```

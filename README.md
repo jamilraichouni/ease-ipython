@@ -78,7 +78,7 @@ Start the container in a way that runs the Python script `my_script.py` in
 Eclipse using EASE:
 
 ```bash
-docker compose run --rm -it --name=ease easeipython /tmp/my_script.sh
+docker compose run --rm -it --name=ease easeipython ./my_script.sh
 ```
 
 Wait until the output from terminal window 1 shows that Python halted in a
@@ -96,7 +96,7 @@ The GNU Debugger (GDB) is used to do that by attaching to the Python process
 that is run in EASE:
 
 ```bash
-docker exec -it ease /tmp/inject_ipython_kernel.sh
+docker exec -it ease ./inject_ipython_kernel.sh
 ```
 
 Above injects the IPython kernel in the EASE Python process. We get a weird
@@ -107,7 +107,7 @@ We do that in a third terminal session:
 ### Terminal window 3 (Connect Jupyter console client to IPython in EASE):
 
 ```bash
-docker exec -it ease /tmp/jupyter_client.sh
+docker exec -it ease ./jupyter_client.sh
 ```
 
 This gives us an IPython prompt and we can demonstrate that we have access to

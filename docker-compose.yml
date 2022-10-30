@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  baseeclipse:
+    image: baseeclipse
+    build:
+      context: baseeclipse
+      args:
+         BASE_IMAGE: "debian:bullseye"
+         BUILD_TYPE: online
+  easeipython:
+    image: easeipython
+    build:
+      context: easeipython
+      args:
+        - BASE_IMAGE=baseeclipse
+    container_name: ease
+    hostname: ease
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - "seccomp=unconfined"

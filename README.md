@@ -66,13 +66,13 @@ docker compose build baseeclipse
 docker compose build easeipython
 ```
 
-## Run the Docker images
+## Run the Docker image
 
 Open three terminal windows and run the following. Here, it is of help (not
 necessary) that you use a terminal emulator that allows to split the window
 to be able to see multiple terminal sessions in parallel.
 
-### Terminal window 1:
+### Terminal window 1 (Let EASE run Python script):
 
 Start the container in a way that runs the Python script `my_script.py` in
 Eclipse using EASE:
@@ -88,7 +88,7 @@ as long as the exception at the bottom of the stack trace shows
 
 `java.lang.IllegalStateException: Workbench has not been created yet`.
 
-### Terminal window 2:
+### Terminal window 2 (GDB injects IPython kernel in running Python script):
 
 In a second terminal session we inject Python code to embed an IPython kernel
 into the running Python process.
@@ -104,7 +104,7 @@ output sharing different information about threads which can be ignored.
 Now we want to connect a Jupyter console client to that IPython kernel.
 We do that in a third terminal session:
 
-### Terminal window 3:
+### Terminal window 3 (Connect Jupyter console client to IPython in EASE):
 
 ```bash
 docker exec -it ease /tmp/jupyter_client.sh

@@ -24,8 +24,11 @@ Python debugger to a running EASE Python script were also not successful.
 
 This is why the author decided to try to inject an IPython kernel using
 [GDB: The GNU Project Debugger](https://www.sourceware.org/gdb/). That is
-working and all steps necessary within a Debian Linux container will be
-described in the following.
+working and all steps necessary to run the demo will be described in the
+following.
+To see what is needed within a Debian Linux container you can just refer to the
+two `Dockerfile` build scripts, the different `.py` and `.sh` scripts and the
+files extending and configuring GDB for our hack.
 
 ## Preconditions
 

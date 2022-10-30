@@ -54,7 +54,7 @@ package).
 Eclipse will be downloaded from [here](https://www.eclipse.org/downloads/packages). You can also manually download the "Eclipse Modeling Tools" package and
 place the downloaded archive as `eclipse.tar.gz` in the subdirectory
 `baseeclipse`. The downloaded archive will be used when you set the value for
-the build argument `BUILD_TYPE` (see in the `docker-compose.yml`) to `online`.
+the build argument `BUILD_TYPE` (see in the `docker-compose.yml`) to `offline`.
 
 The second image derives from the base Eclipse image and installs scripts that
 run the simple example Python script in an EASE context (see heading

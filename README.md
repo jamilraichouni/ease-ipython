@@ -65,9 +65,9 @@ docker compose build easeipython
 
 ## Run the Docker images
 
-Open three terminal windows and run the following. Here it is of help (not
+Open three terminal windows and run the following. Here, it is of help (not
 necessary) that you use a terminal emulator that allows to split the window
-to be bale to see multiple terminal sessions in parallel.
+to be able to see multiple terminal sessions in parallel.
 
 ### Terminal window 1:
 

@@ -121,3 +121,11 @@ Out[2]: '/tmp/workspace'
 
 In [3]:
 ```
+
+Here, we can run any Python code in EASE and we can also post-mortem debug when
+something crashes via
+
+```python
+import pdb
+pdb.pm()
+```

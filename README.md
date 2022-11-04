@@ -58,7 +58,7 @@ the build argument `BUILD_TYPE` (see in the `docker-compose.yml`) to `offline`.
 
 The second image derives from the base Eclipse image and installs scripts that
 run the simple example Python script in an EASE context (see heading
-"Run the Docker images" below. The second and final images also adds some
+"Run the Docker images" below). The second and final images also adds some
 plugins (Py4J and EASE features) to the clean Eclipse Modeling Tool package.
 
 ```bash
